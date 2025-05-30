@@ -1,4 +1,4 @@
-import { User } from "../../entities/user";
+import { User } from '../../entities/user';
 
 interface UserInfoProps {
   user: User | null;
@@ -6,7 +6,7 @@ interface UserInfoProps {
 
 export const UserInfo: React.FC<UserInfoProps> = ({ user }) => {
   if (!user) {
-    return <span className="UserInfo">No user info</span>
+    return <span className="UserInfo">No user info</span>;
   }
 
   return (

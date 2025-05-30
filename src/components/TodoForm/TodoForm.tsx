@@ -18,10 +18,12 @@ export const TodoForm: React.FC<TodoFormProps> = ({ onAdd, users }) => {
 
   const handleUserChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectUserId(event.target.value);
+    setHasUserIdError(false);
   };
 
   const handleTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTextTitle(event.target.value);
+    setHasTitleError(false);
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
